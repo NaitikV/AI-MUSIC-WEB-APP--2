@@ -54,7 +54,7 @@ function draw() {
     song1status=sound1.isPlaying();
     song2status=sound2.isPlaying();
 
-    if (scoreleftwrist > 0.2) {
+    if (scoreleftwrist > 0.1) {
         circle(leftwristx, leftwristy, 30);
         sound1.stop();
             if (song2status == false) {
@@ -62,7 +62,7 @@ function draw() {
                 document.getElementById("song").innerHTML = "Bing Bong BOO";        
             } }
     
-    if (scorerightwrist > 0.2) {
+    if (scorerightwrist > 0.1) {
         circle(rightwristx, rightwristy, 30);
         sound2.stop();
             if (song1status == false) {
